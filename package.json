@@ -1,0 +1,24 @@
+{
+  "name": "web3-tests",
+  "version": "1.0.0",
+  "description": "npm install",
+  "main": "contract_events_test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhargavaparoksham/web3-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhargavaparoksham/web3-tests/issues"
+  },
+  "homepage": "https://github.com/bhargavaparoksham/web3-tests#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ethereumjs-tx": "^2.1.2"
+  }
+}
