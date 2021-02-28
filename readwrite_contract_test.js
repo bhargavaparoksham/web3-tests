@@ -70,7 +70,7 @@ testnet.eth.getTransactionCount(acc1, (err, txCount) => {
 	//Get Smart Contract Data
 	//Smart contract byte code is taken from truffle -> build folder -> Hello.json
 
-  const Data = hello_contract.methods.setGreeting('Fuck Yes').encodeABI()
+  const Data = hello_contract.methods.setGreeting('Hello World').encodeABI()
 
 	//Transaction Data
 

@@ -16,7 +16,7 @@ const testnet = new Web3(url)
 //rinkeyby faucet: https://faucet.rinkeby.io/
 
 const acc1 = process.env.ACCOUNT_1
-const acc2 = process.env.ACCOUNT_1
+const acc2 = process.env.ACCOUNT_2
 
 //console.log(testnet.eth.accounts.create())
 //you can also create a new account using the above line, in node commandline, instead of metamask and get the address from there.
@@ -40,7 +40,7 @@ testnet.eth.getTransactionCount(acc1, (err, txCount) => {
  	//console.log(txCount)
 	const tx = new ethTx({ 
 		nonce: testnet.utils.toHex(txCount), 
-		to: acc1, 
+		to: acc2, 
 		value: testnet.utils.toHex(testnet.utils.toWei('0.1','ether')), 
 		gasLimit: testnet.utils.toHex(21000), 
 		gasPrice: testnet.utils.toHex(testnet.utils.toWei('10','gwei'))}, 
